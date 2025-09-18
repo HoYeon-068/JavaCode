@@ -1,0 +1,56 @@
+Stack 과 Queue
+
+
+Stack LIFO 구조 (라스트인 퍼스트아웃)
+push(),pop(),peek(), isEmpty(), search() 등등 사용
+
+
+Queue FIFO 구조 (퍼스트인 퍼스트아웃)
+offer(),poll(),isEmpty() 등등 사용
+
+
+Deque 양쪽 입출력이 가능한 큐
+
+Deque q = new LinkedList();
+q.offerFirst("A");
+q.offerFirst("B");
+q.offerLast("C");
+
+Priority[Queue]
+FIFO 구조 X
+저장된 순서에 상관없이 우선 순위가 높은 것 부터 꺼내는 구조.
+적은 숫자가 먼저 나옴
+
+
+Collections 
+
+
+List Set Map
+
+
+List
+
+ArrayList  순서 유지/중복 허용 
+Vector     순서 유지/중복 허용 (동기화 되어있음)
+LinkedList 순서 유지/중복 허용 (중간 값 삭제나 삽입 시 속도 빠름)
+
+
+Set
+
+HashSet 순서 유지X/중복 허용X
+TreeSet 순서 유지X/중복 허용X
+이진 검색 트리라는 자료구조로 데이터를 저장
+작은 값은 왼쪽 큰 값은 오른쪽에 주소값 저장
+
+Map
+키-값  한쌍   으로 데이터를 저장하는 구조
+엔트리(Entry)
+키는 중복 허용  X
+
+HashMap
+
+HashMap<String, String> hm = new HashMap<>();
+hm.put("kenik", "이창익");
+hm.put("admin", "관리자");
+hm.put("hong", "홍길동");
+hm.put("hong", "홍남길");
